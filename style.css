@@ -1,0 +1,19 @@
+/* Style the board cells */
+.board td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+/* Style the black stones */
+.board .stone.black {
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* Style the white stones */
+.board .stone.white {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+}
