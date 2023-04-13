@@ -1,6 +1,3 @@
-import java.util.Random;
-import java.util.Scanner;
-
 public class SnakesAndLadders {
    public static void main(String[] args) {
       // Define the game board
@@ -71,4 +68,31 @@ public class SnakesAndLadders {
             } else if (positions[0] == board[i][j]) {
                System.out.print("1");
             } else if (positions[1] == board[i][j]) {
-               System.out
+               System.out.print("2");
+            } else {
+               System.out.print(".");
+            }
+            System.out.print("\t");
+         }
+         System.out.println();
+      }
+   }
+
+   // Checks if the current position is the start of a ladder or the head of a snake
+   //
+   // Checks if the current position is the start of a ladder or the head of a snake
+   public static int checkForLadderOrSnake(int position, int[] ladders, int[] snakes, int[] ladderEnds, int[] snakeEnds) {
+      for (int i = 0; i < ladders.length; i++) {
+         if (position == ladders[i]) {
+            return ladderEnds[i];
+         }
+      }
+
+      for (int i = 0; i < snakes.length; i++) {
+         if (position == snakes[i]) {
+            return snakeEnds[i];
+         }
+      }
+
+      return position;
+}
