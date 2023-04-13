@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Buddhist Game Go</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<h1>Buddhist Game Go</h1>
-	<div id="board">
-		<!-- The game board will be generated dynamically with JavaScript -->
-	</div>
-	<div id="score">
-		<p>Black: <span id="black-score">0</span></p>
-		<p>White: <span id="white-score">0</span></p>
-	</div>
-	<button id="pass-button">Pass</button>
-	<script src="game.js"></script>
-</body>
+   <head>
+      <title>Snakes and Ladders</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div id="game-board">
+         <div class="row">
+            <div class="square" id="square-100"><span>100</span></div>
+            <div class="square" id="square-99"></div>
+            ...
+            <div class="square" id="square-2"></div>
+            <div class="square" id="square-1"><span>1</span></div>
+         </div>
+      </div>
+   </body>
 </html>
